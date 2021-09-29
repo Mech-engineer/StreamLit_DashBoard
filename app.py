@@ -34,6 +34,8 @@ st.sidebar.markdown("### Number of tweets by sentiment")
 select = st.sidebar.selectbox('Visualization type', ['Bar plot', 'Pie chart'], key='1')
 sentiment_count = data['airline_sentiment'].value_counts()
 sentiment_count = pd.DataFrame({'Sentiment':sentiment_count.index, 'Tweets':sentiment_count.values})
+
+
 if not st.sidebar.checkbox("Hide", True):
     st.markdown("### Number of tweets by sentiment")
     if select == 'Bar plot':
