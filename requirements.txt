@@ -2,3 +2,6 @@ streamlit
 plotly
 wordcloud
 matplotlib
+pandas==1.1.4
+
+
